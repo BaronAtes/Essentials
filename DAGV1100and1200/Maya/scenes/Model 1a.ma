@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Model 1a.ma
-//Last modified: Mon, Jun 09, 2025 01:47:36 PM
+//Last modified: Mon, Jun 09, 2025 02:12:17 PM
 //Codeset: 1252
 file -rdi 1 -ns "Pot" -rfn "PotRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Pot.ma";
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
@@ -24,7 +24,7 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "0CFAB804-4273-4733-02BC-69BB641FC4F6";
+fileInfo "UUID" "A3574358-45D4-AB3B-9CAF-64BCAD1DFCCB";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "B6161036-490B-3F3C-B4BA-22926C2B240C";
@@ -612,7 +612,7 @@ createNode reference -n "PlantPotRN";
 		"PlantPotRN"
 		"PlantPotRN" 0
 		"PlantPotRN" 3
-		2 "|PlantPot:Pot" "translate" " -type \"double3\" -8.8347087083788729 0 -8.24305295616220945"
+		2 "|PlantPot:Pot" "translate" " -type \"double3\" -8.78183738266757707 0 -8.40041273968483537"
 		
 		2 "|PlantPot:Pot" "rotate" " -type \"double3\" 0 -18.57183761483466355 0"
 		
