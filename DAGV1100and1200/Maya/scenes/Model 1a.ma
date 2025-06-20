@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Model 1a.ma
-//Last modified: Mon, Jun 09, 2025 02:12:17 PM
+//Last modified: Fri, Jun 20, 2025 02:54:12 PM
 //Codeset: 1252
 file -rdi 1 -ns "Pot" -rfn "PotRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Pot.ma";
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
@@ -9,6 +9,8 @@ file -rdi 1 -ns "Chair1" -rfn "ChairRN1" -op "v=0;" -typ "mayaAscii" "C:/Users/1
 file -rdi 1 -ns "Bookshelf" -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Bookshelf.ma";
 file -rdi 1 -ns "Books" -rfn "BooksRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Books.ma";
 file -rdi 1 -ns "PlantPot" -rfn "PlantPotRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/PlantPot.ma";
+file -rdi 1 -ns "PottedPlantStand" -rfn "PottedPlantStandRN" -op "v=0;" -typ
+		 "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/PottedPlantStand.ma";
 file -r -ns "Pot" -dr 1 -rfn "PotRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Pot.ma";
 file -r -ns "Table" -dr 1 -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
 file -r -ns "Chair" -dr 1 -rfn "ChairRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Chair.ma";
@@ -16,6 +18,8 @@ file -r -ns "Chair1" -dr 1 -rfn "ChairRN1" -op "v=0;" -typ "mayaAscii" "C:/Users
 file -r -ns "Bookshelf" -dr 1 -rfn "BookshelfRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Bookshelf.ma";
 file -r -ns "Books" -dr 1 -rfn "BooksRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Books.ma";
 file -r -ns "PlantPot" -dr 1 -rfn "PlantPotRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/PlantPot.ma";
+file -r -ns "PottedPlantStand" -dr 1 -rfn "PottedPlantStandRN" -op "v=0;" -typ "mayaAscii"
+		 "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/PottedPlantStand.ma";
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1.1";
 currentUnit -l centimeter -a degree -t film;
@@ -24,26 +28,26 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "A3574358-45D4-AB3B-9CAF-64BCAD1DFCCB";
+fileInfo "UUID" "A828196E-4798-01D8-7509-B3B75E8781F2";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "B6161036-490B-3F3C-B4BA-22926C2B240C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 31.718013341548108 41.000112553540184 27.720284086355097 ;
-	setAttr ".r" -type "double3" -50.602164983594903 37.601077287498292 2.0072209467199577e-14 ;
-	setAttr ".rp" -type "double3" -1.7763568394002505e-15 -1.7763568394002505e-15 0 ;
-	setAttr ".rpt" -type "double3" 8.6305801350377556e-15 -1.0699468080596398e-14 3.1727789181417995e-15 ;
+	setAttr ".t" -type "double3" 0.54956581515123704 8.1818825799579056 1.4313039336684339 ;
+	setAttr ".r" -type "double3" -21.127834320085846 45.09864577058314 -7.2091964114785344e-14 ;
+	setAttr ".rp" -type "double3" -1.6653345369377348e-15 -8.8817841970012523e-16 0 ;
+	setAttr ".rpt" -type "double3" 8.3599075494766707e-15 -1.609877932197866e-14 1.2598756876543113e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F92653CC-4101-B54F-D33A-5890E87723B7";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 65.812913374377246;
-	setAttr ".ow" 62.353829072479598;
+	setAttr ".coi" 15.523835511153768;
+	setAttr ".ow" 15.963495014955191;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 6.2306863728650583 -9.8573136001716861 -5.3743972965268192 ;
+	setAttr ".tp" -type "double3" -9.7071663682039322 2.5863161484446646 -8.7901710189402493 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -349,15 +353,15 @@ createNode mesh -n "WallShape2" -p "Wall2";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "281DEB30-422F-0872-FA9B-7D9CB07CCB40";
+	rename -uid "73195044-47E2-6150-1EF9-43B98416071B";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8352B97F-4E4D-7E90-6064-8EBCDA42BDEC";
+	rename -uid "8EA2963C-4484-E22C-646F-35978D471923";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "4E8058D0-46F7-7093-EF11-8FA3899C7CBB";
+	rename -uid "2B9306A7-4ADC-87F5-8A61-24A0FFD31BB9";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "5F880DFE-4B5A-C684-DF44-818F0249A20C";
+	rename -uid "4B27A583-47CD-53B1-C681-C7B7F5BF6C27";
 	setAttr ".cdl" 3;
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
 	setAttr -s 4 ".dli";
@@ -365,7 +369,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "373F43EC-4C10-0E29-52ED-B0AD3054942C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "DF78908D-4C41-7697-5B85-869B761CC372";
+	rename -uid "82096CC8-40D8-5D68-B2DE-D5BEFE5DEC36";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "C7648ECF-48BD-BE3E-4209-D0BBF99A7F64";
 	setAttr ".g" yes;
@@ -491,7 +495,7 @@ createNode reference -n "ChairRN";
 		"ChairRN"
 		"ChairRN" 0
 		"ChairRN" 1
-		2 "|Chair:ChairMesh" "translate" " -type \"double3\" 8 0 2";
+		2 "|Chair:ChairMesh" "translate" " -type \"double3\" 8 0 2.82865658302373646";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "ChairRN1";
@@ -511,7 +515,7 @@ createNode reference -n "ChairRN1";
 		"ChairRN1"
 		"ChairRN1" 0
 		"ChairRN1" 13
-		2 "|Chair1:ChairMesh" "translate" " -type \"double3\" 1.99999999999999112 0 8.00000000000000178"
+		2 "|Chair1:ChairMesh" "translate" " -type \"double3\" 2.82865658302372758 0 8.00000000000000355"
 		
 		2 "|Chair1:ChairMesh" "translateX" " -av"
 		2 "|Chair1:ChairMesh" "translateZ" " -av"
@@ -612,11 +616,22 @@ createNode reference -n "PlantPotRN";
 		"PlantPotRN"
 		"PlantPotRN" 0
 		"PlantPotRN" 3
-		2 "|PlantPot:Pot" "translate" " -type \"double3\" -8.78183738266757707 0 -8.40041273968483537"
+		2 "|PlantPot:Pot" "translate" " -type \"double3\" -9 1.42972934246063255 -8"
 		
 		2 "|PlantPot:Pot" "rotate" " -type \"double3\" 0 -18.57183761483466355 0"
 		
 		2 "|PlantPot:Pot" "scale" " -type \"double3\" 0.22723802035823082 0.22723802035823082 0.22723802035823082";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "PottedPlantStandRN";
+	rename -uid "C2A75703-45A0-F5CA-682F-EEBF005EC5F8";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"PottedPlantStandRN"
+		"PottedPlantStandRN" 0
+		"PottedPlantStandRN" 2
+		2 "|PottedPlantStand:polySurface2" "translate" " -type \"double3\" -9 0 -8"
+		
+		2 "|PottedPlantStand:polySurface2" "scale" " -type \"double3\" 1.42972937303456571 1.42972937303456571 1.42972937303456571";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 select -ne :time1;
@@ -637,14 +652,14 @@ select -ne :defaultShaderList1;
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderingList1;
-	setAttr -s 3 ".r";
+	setAttr -s 4 ".r";
 select -ne :standardSurface1;
 	setAttr ".bc" -type "float3" 0.57051283 0.57051283 0.57051283 ;
 	setAttr ".sr" 0.5;
 select -ne :initialShadingGroup;
-	setAttr -s 29 ".dsm";
+	setAttr -s 30 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 4 ".gn";
+	setAttr -s 5 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
