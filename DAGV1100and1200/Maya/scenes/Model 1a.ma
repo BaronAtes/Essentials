@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Model 1a.ma
-//Last modified: Fri, Jun 20, 2025 02:54:12 PM
+//Last modified: Fri, Jun 20, 2025 03:35:53 PM
 //Codeset: 1252
 file -rdi 1 -ns "Pot" -rfn "PotRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Pot.ma";
 file -rdi 1 -ns "Table" -rfn "TableRN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Table.ma";
@@ -28,26 +28,26 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "A828196E-4798-01D8-7509-B3B75E8781F2";
+fileInfo "UUID" "9D3A3B10-4446-74DE-73A3-67B9A780C13C";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "B6161036-490B-3F3C-B4BA-22926C2B240C";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.54956581515123704 8.1818825799579056 1.4313039336684339 ;
-	setAttr ".r" -type "double3" -21.127834320085846 45.09864577058314 -7.2091964114785344e-14 ;
-	setAttr ".rp" -type "double3" -1.6653345369377348e-15 -8.8817841970012523e-16 0 ;
-	setAttr ".rpt" -type "double3" 8.3599075494766707e-15 -1.609877932197866e-14 1.2598756876543113e-15 ;
+	setAttr ".t" -type "double3" 29.095546736914091 25.669053022568743 46.266267329780888 ;
+	setAttr ".r" -type "double3" -16.798178437485365 36.386407383083927 -1.0370928784608529e-13 ;
+	setAttr ".rp" -type "double3" 1.7763568394002505e-15 -3.5527136788005009e-15 0 ;
+	setAttr ".rpt" -type "double3" 3.3812544976835236e-15 -1.9409674545274196e-14 -4.8184709111498249e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F92653CC-4101-B54F-D33A-5890E87723B7";
 	setAttr -k off ".v" no;
 	setAttr ".rnd" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 15.523835511153768;
+	setAttr ".coi" 57.205443044213403;
 	setAttr ".ow" 15.963495014955191;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -9.7071663682039322 2.5863161484446646 -8.7901710189402493 ;
+	setAttr ".tp" -type "double3" -3.3922312703793125 9.136602100739676 2.1790235902264712 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -s -n "top";
@@ -353,15 +353,15 @@ createNode mesh -n "WallShape2" -p "Wall2";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "73195044-47E2-6150-1EF9-43B98416071B";
+	rename -uid "2C4E07AE-4940-CFA1-C7B6-A8B41D6FB6FB";
 	setAttr -s 2 ".lnk";
 	setAttr -s 2 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8EA2963C-4484-E22C-646F-35978D471923";
+	rename -uid "ACE4BC59-418D-0E6F-24E5-FBA4672C22A5";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "2B9306A7-4ADC-87F5-8A61-24A0FFD31BB9";
+	rename -uid "6C0C3678-4100-3B99-29F5-969B5B68100A";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "4B27A583-47CD-53B1-C681-C7B7F5BF6C27";
+	rename -uid "CDDB105F-468B-68C9-EE1B-DDB22ACA26B9";
 	setAttr ".cdl" 3;
 	setAttr -s 4 ".dli[1:3]"  1 2 3;
 	setAttr -s 4 ".dli";
@@ -369,7 +369,7 @@ createNode displayLayer -n "defaultLayer";
 	rename -uid "373F43EC-4C10-0E29-52ED-B0AD3054942C";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "82096CC8-40D8-5D68-B2DE-D5BEFE5DEC36";
+	rename -uid "315CC5BE-4E40-9990-21DA-07B9557DEAEE";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "C7648ECF-48BD-BE3E-4209-D0BBF99A7F64";
 	setAttr ".g" yes;
@@ -515,7 +515,7 @@ createNode reference -n "ChairRN1";
 		"ChairRN1"
 		"ChairRN1" 0
 		"ChairRN1" 13
-		2 "|Chair1:ChairMesh" "translate" " -type \"double3\" 2.82865658302372758 0 8.00000000000000355"
+		2 "|Chair1:ChairMesh" "translate" " -type \"double3\" 2.99999999999999112 0 8.00000000000000355"
 		
 		2 "|Chair1:ChairMesh" "translateX" " -av"
 		2 "|Chair1:ChairMesh" "translateZ" " -av"
