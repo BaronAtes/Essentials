@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Scene2_Main.ma
-//Last modified: Fri, Jul 25, 2025 05:06:33 PM
+//Last modified: Fri, Jul 25, 2025 05:07:08 PM
 //Codeset: 1252
 file -rdi 1 -ns "Asset1" -rfn "Asset1RN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Asset1.ma";
 file -rdi 1 -ns "Asset2" -rfn "Asset2RN" -op "v=0;" -typ "mayaAscii" "C:/Users/10880292/Documents/GitHub/Essentials/DAGV1100and1200/Maya//scenes/Asset2.ma";
@@ -17,12 +17,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202304191415-7fa20164c6";
 fileInfo "osv" "Windows 11 Enterprise v2009 (Build: 26100)";
-fileInfo "UUID" "BB5DB41D-4E26-6FE2-6CD2-9EBB9A8670D9";
+fileInfo "UUID" "690E8791-4C78-25D3-6885-C0A920367E64";
 fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "55FE480C-47B5-EE00-D880-07AF53B819F9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -48.496284767542889 60.496284767542889 48.496284767542861 ;
+	setAttr ".t" -type "double3" -53.163415596763826 65.163415596763826 53.163415596763805 ;
 	setAttr ".r" -type "double3" -35.264389682754654 -45 -1.5742942482382308e-14 ;
 	setAttr ".rp" -type "double3" 2.6645352591003765e-15 3.5527136788005009e-15 0 ;
 	setAttr ".rpt" -type "double3" 1.3436175086641806e-15 -4.3697208497153926e-15 1.6780638384790324e-15 ;
@@ -30,7 +30,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "83AEEE41-4EC4-0AFE-C431-B88CD2548512";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 83.998029195712874;
+	setAttr ".coi" 92.08173691749478;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -145,7 +145,7 @@ createNode mesh -n "polySurfaceShape1" -p "Walls";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode fosterParent -n "Asset2RNfosterParent1";
-	rename -uid "DD093EE7-4F89-34EE-D6D5-44BCF1C668B7";
+	rename -uid "C465581A-4AFC-9068-FEDC-39BF6D336538";
 createNode mesh -n "Asset2:polySurfaceShape1" -p "Asset2RNfosterParent1";
 	rename -uid "E400D317-40EC-B84B-8C2F-A1B71490FF55";
 	setAttr -k off ".v";
@@ -1496,7 +1496,7 @@ createNode mesh -n "Asset2:polySurfaceShape1" -p "Asset2RNfosterParent1";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode fosterParent -n "Asset3RNfosterParent1";
-	rename -uid "4E76F2DA-417F-86A0-50E5-2B88A6ACB21F";
+	rename -uid "22F038C1-4A6D-7618-E15D-CDBEFA12428D";
 createNode mesh -n "Asset3:polySurfaceShape2" -p "Asset3RNfosterParent1";
 	rename -uid "E8B5FD76-45A9-29F8-D3EE-1088E2D31F32";
 	setAttr -k off ".v";
